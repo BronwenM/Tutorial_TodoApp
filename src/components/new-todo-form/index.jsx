@@ -1,4 +1,4 @@
-import {useForm} from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 
 import { Input } from '../input-field';
 
@@ -34,11 +34,11 @@ export const NewTodoForm = () => {
                 />
 
                 <Input
-                type="text"
-                name="title"
+                type="date"
+                name="date"
                 label="Due Date"
                 errors={errors}
-                regisiter={register}
+                register={register}
                 validationSchema={
                     {
                         required: "Todo deadline is required"
